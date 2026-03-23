@@ -64,9 +64,7 @@ echo "REPLY_API_KEY=your_key_here" > reply-skill/.env
 
 ### 3. Use with Claude Code
 
-Add the skill to your Claude Code setup by placing or symlinking the `Skills/Reply` folder into your project's skills directory, or point Claude Code to this repo.
-
-Then just type:
+Clone this repo into your Claude Code skills directory, or symlink it. Then type:
 ```
 /reply
 ```
@@ -76,17 +74,16 @@ You'll see a dashboard with your account status, performance snapshot, and a men
 ## Project Structure
 
 ```
-Skills/Reply/
-  SKILL.md              # Skill definition — routes, flows, instructions
-  scripts/
-    api-client.ts       # HTTP client for Reply.io API (v1 + v2)
-    campaigns.ts        # List, create, duplicate, start, pause, stats, top, summary
-    contacts.ts         # Add, list, search, delete, finish, opt-out, replied, contact-stats
-    csv-upload.ts       # Preview and upload CSV contacts with column mapping
-    email-accounts.ts   # List and check connected email accounts
-    onboarding.ts       # Dashboard, performance snapshot, and menu
-    push-to-campaign.ts # Push contacts to campaigns (single, bulk, add-and-push)
-    schedules.ts        # List, view, and create sending schedules
+SKILL.md              # Skill definition — routes, flows, instructions
+scripts/
+  api-client.ts       # HTTP client for Reply.io API (v1 + v2)
+  campaigns.ts        # List, create, duplicate, start, pause, stats, top, summary
+  contacts.ts         # Add, list, search, delete, finish, opt-out, replied, contact-stats
+  csv-upload.ts       # Preview and upload CSV contacts with column mapping
+  email-accounts.ts   # List and check connected email accounts
+  onboarding.ts       # Dashboard, performance snapshot, and menu
+  push-to-campaign.ts # Push contacts to campaigns (single, bulk, add-and-push)
+  schedules.ts        # List, view, and create sending schedules
     utils.ts            # Terminal colors, table formatting, helpers
 ```
 

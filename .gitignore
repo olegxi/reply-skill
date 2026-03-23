@@ -4,3 +4,7 @@ node_modules/
 .DS_Store
 *.log
 .claude/
+Skills/
+reply-api-llm.md
+sample_contacts.csv
+Reply API Postman.json
