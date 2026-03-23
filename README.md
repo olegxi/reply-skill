@@ -1,6 +1,6 @@
-# Reply.io Skill for Claude Code
+# Reply.io Skill
 
-Manage your entire Reply.io outreach — contacts, campaigns, analytics, and more — directly from Claude Code, Perplexity, Codex, or any AI assistant that supports skills.
+Manage your entire Reply.io outreach — contacts, campaigns, analytics, and more — directly from your AI assistant. Works with Claude, Perplexity, Codex, and any platform that supports skills.
 
 ![Reply.io](https://img.shields.io/badge/Reply.io-API%20v1%20%2B%20v2-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-tsx-3178C6)
@@ -8,7 +8,7 @@ Manage your entire Reply.io outreach — contacts, campaigns, analytics, and mor
 
 ## What It Does
 
-This skill lets you run your Reply.io sales engagement from conversational AI. No switching tabs, no clicking through dashboards — just tell your AI what you need.
+Run your Reply.io sales engagement from conversational AI. No switching tabs, no clicking through dashboards — just tell your AI what you need.
 
 **Example prompts:**
 - *"Show me my top performing campaigns"*
@@ -62,9 +62,9 @@ git clone https://github.com/olegxi/reply-skill.git
 echo "REPLY_API_KEY=your_key_here" > reply-skill/.env
 ```
 
-### 3. Use with Claude Code
+### 3. Use
 
-Clone this repo into your Claude Code skills directory, or symlink it. Then type:
+Add this skill to your AI assistant's skills directory, or symlink it. Then invoke:
 ```
 /reply
 ```
@@ -84,7 +84,7 @@ scripts/
   onboarding.ts       # Dashboard, performance snapshot, and menu
   push-to-campaign.ts # Push contacts to campaigns (single, bulk, add-and-push)
   schedules.ts        # List, view, and create sending schedules
-    utils.ts            # Terminal colors, table formatting, helpers
+  utils.ts            # Terminal colors, table formatting, helpers
 ```
 
 ## Requirements
